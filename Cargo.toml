@@ -1,0 +1,31 @@
+[package]
+name = "traffic-down-rs"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+gui = ["eframe", "egui"]
+
+[dependencies]
+tokio = { version = "1.32", features = ["full"] }
+reqwest = { version = "0.11", features = ["json", "stream"] }
+futures = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+colored = "2.0"
+clap = { version = "4.4", features = ["derive"] }
+rand = "0.8"
+socket2 = "0.5"
+local-ip-address = "0.5"
+ctrlc = "3.4"
+crossterm = "0.27"
+bytes = "1.5"
+futures-util = "0.3"
+indicatif = "0.17"
+log = "0.4"
+env_logger = "0.10"
+once_cell = "1.18"
+anyhow = "1.0"
+thiserror = "1.0"
+eframe = { version = "0.24", optional = true }
+egui = { version = "0.24", optional = true }
